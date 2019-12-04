@@ -15,12 +15,12 @@ public class Product implements Serializable{
     @NotEmpty @Column(nullable=false)
     private String manufacturer;
 
-    public int getId() {
+    public int getIdProduct() {
         return idProduct;
     }
 
-    public void setId(int id) {
-        this.idProduct = id;
+    public void setIdProduct(int idProduct) {
+        this.idProduct = idProduct;
     }
 
     public String getProductName() {
@@ -42,7 +42,7 @@ public class Product implements Serializable{
     @Override
     public String toString() {
         return "Product{" +
-                "id=" + idProduct +
+                "idProduct=" + idProduct +
                 ", productName='" + productName + '\'' +
                 ", manufacturer='" + manufacturer + '\'' +
                 '}';
