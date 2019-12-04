@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 @NamedQuery(name = "Order.findAll", query = "select o from Order o")
 public class Order implements Serializable{
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
